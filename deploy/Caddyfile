@@ -1,0 +1,12 @@
+:8080 {
+	route /api/* {
+		uri strip_prefix /api
+
+		unifi_api {
+			base_url "{$UNIFI_ENDPOINT}"
+			username "{$UNIFI_USERNAME}"
+			password "{$UNIFI_PASSWORD}"
+			nats_url "{$UNIFI_NATS_URL}"
+		}
+	}
+}
