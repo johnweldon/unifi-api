@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/caddyserver/caddy/v2"
+	caddy "github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"github.com/johnweldon/unifi-scheduler/pkg/nats"
 	"github.com/johnweldon/unifi-scheduler/pkg/unifi"
